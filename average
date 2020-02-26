@@ -1,0 +1,537 @@
+module average(clk_in,cr,cp);
+input clk_in,cr;
+output reg[24:0]cp;
+reg [24:0]cnt0,cnt1,cnt2,cnt3,cnt4,cnt5,cnt6,cnt7,cnt8,cnt9,cnt10,cnt11,cnt12,cnt13,cnt14,cnt15,cnt16,cnt17,cnt18,cnt19,cnt20,cnt21,cnt22,cnt23,cnt24;
+parameter CLK_IN=50000000;
+integer n;
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt0<=0;
+			cp[0]<=0;
+		end
+	else begin
+			if(cnt0<(CLK_IN/2*1))
+			cnt0<=cnt0+1;
+			else 
+			begin
+				cp[0]<=~cp[0];
+				cnt0<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt1<=0;
+			cp[1]<=0;
+		end
+	else begin
+			if(cnt1<(CLK_IN/2*2))
+			cnt1<=cnt1+1;
+			else 
+			begin
+				cp[1]<=~cp[1];
+				cnt1<=0;
+			end
+end
+end
+end
+
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt2<=0;
+			cp[2]<=0;
+		end
+	else begin
+			if(cnt2<(CLK_IN/2*3))
+			cnt2<=cnt2+1;
+			else 
+			begin
+				cp[2]<=~cp[2];
+				cnt2<=0;
+			end
+end
+end
+end
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt3<=0;
+			cp[3]<=0;
+		end
+	else begin
+			if(cnt3<(CLK_IN/2*4))
+			cnt3<=cnt3+1;
+			else 
+			begin
+				cp[3]<=~cp[3];
+				cnt3<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt4<=0;
+			cp[4]<=0;
+		end
+	else begin
+			if(cnt4<(CLK_IN/2*5))
+			cnt4<=cnt4+1;
+			else 
+			begin
+				cp[4]<=~cp[4];
+				cnt4<=0;
+			end
+end
+end
+end
+
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt5<=0;
+			cp[5]<=0;
+		end
+	else begin
+			if(cnt5<(CLK_IN/2*6))
+			cnt5<=cnt5+1;
+			else 
+			begin
+				cp[5]<=~cp[5];
+				cnt5<=0;
+			end
+end
+end
+end
+
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt6<=0;
+			cp[6]<=0;
+		end
+	else begin
+			if(cnt6<(CLK_IN/2*7))
+			cnt6<=cnt6+1;
+			else 
+			begin
+				cp[6]<=~cp[6];
+				cnt6<=0;
+			end
+end
+end
+end
+
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt7<=0;
+			cp[7]<=0;
+		end
+	else begin
+			if(cnt7<(CLK_IN/2*8))
+			cnt7<=cnt7+1;
+			else 
+			begin
+				cp[7]<=~cp[7];
+				cnt7<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt8<=0;
+			cp[8]<=0;
+		end
+	else begin
+			if(cnt8<(CLK_IN/2*9))
+			cnt8<=cnt8+1;
+			else 
+			begin
+				cp[8]<=~cp[8];
+				cnt8<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt9<=0;
+			cp[9]<=0;
+		end
+	else begin
+			if(cnt9<(CLK_IN/2*10))
+			cnt9<=cnt9+1;
+			else 
+			begin
+				cp[9]<=~cp[9];
+				cnt9<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt10<=0;
+			cp[10]<=0;
+		end
+	else begin
+			if(cnt10<(CLK_IN/2*11))
+			cnt10<=cnt10+1;
+			else 
+			begin
+				cp[10]<=~cp[10];
+				cnt10<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt11<=0;
+			cp[11]<=0;
+		end
+	else begin
+			if(cnt11<(CLK_IN/2*12))
+			cnt11<=cnt11+1;
+			else 
+			begin
+				cp[11]<=~cp[11];
+				cnt11<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt12<=0;
+			cp[12]<=0;
+		end
+	else begin
+			if(cnt12<(CLK_IN/2*13))
+			cnt12<=cnt12+1;
+			else 
+			begin
+				cp[12]<=~cp[12];
+				cnt12<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt13<=0;
+			cp[13]<=0;
+		end
+	else begin
+			if(cnt13<(CLK_IN/2*14))
+			cnt13<=cnt13+1;
+			else 
+			begin
+				cp[13]<=~cp[13];
+				cnt13<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt14<=0;
+			cp[14]<=0;
+		end
+	else begin
+			if(cnt14<(CLK_IN/2*15))
+			cnt14<=cnt14+1;
+			else 
+			begin
+				cp[14]<=~cp[14];
+				cnt14<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt15<=0;
+			cp[15]<=0;
+		end
+	else begin
+			if(cnt15<(CLK_IN/2*16))
+			cnt15<=cnt15+1;
+			else 
+			begin
+				cp[15]<=~cp[15];
+				cnt15<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt16<=0;
+			cp[16]<=0;
+		end
+	else begin
+			if(cnt16<(CLK_IN/2*17))
+			cnt16<=cnt16+1;
+			else 
+			begin
+				cp[16]<=~cp[16];
+				cnt16<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt17<=0;
+			cp[17]<=0;
+		end
+	else begin
+			if(cnt17<(CLK_IN/2*18))
+			cnt17<=cnt17+1;
+			else 
+			begin
+				cp[17]<=~cp[17];
+				cnt17<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt18<=0;
+			cp[18]<=0;
+		end
+	else begin
+			if(cnt18<(CLK_IN/2*19))
+			cnt18<=cnt18+1;
+			else 
+			begin
+				cp[18]<=~cp[18];
+				cnt18<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt19<=0;
+			cp[19]<=0;
+		end
+	else begin
+			if(cnt19<(CLK_IN/2*20))
+			cnt19<=cnt19+1;
+			else 
+			begin
+				cp[19]<=~cp[19];
+				cnt19<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt20<=0;
+			cp[20]<=0;
+		end
+	else begin
+			if(cnt20<(CLK_IN/2*21))
+			cnt20<=cnt20+1;
+			else 
+			begin
+				cp[20]<=~cp[20];
+				cnt20<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt21<=0;
+			cp[21]<=0;
+		end
+	else begin
+			if(cnt21<(CLK_IN/2*22))
+			cnt21<=cnt21+1;
+			else 
+			begin
+				cp[21]<=~cp[21];
+				cnt21<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt22<=0;
+			cp[22]<=0;
+		end
+	else begin
+			if(cnt22<(CLK_IN/2*23))
+			cnt22<=cnt22+1;
+			else 
+			begin
+				cp[22]<=~cp[22];
+				cnt22<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt23<=0;
+			cp[23]<=0;
+		end
+	else begin
+			if(cnt23<(CLK_IN/2*24))
+			cnt23<=cnt23+1;
+			else 
+			begin
+				cp[23]<=~cp[23];
+				cnt23<=0;
+			end
+end
+end
+end
+
+
+always@(posedge clk_in or negedge cr)
+begin  
+begin
+	if(!cr)
+		begin	
+			cnt24<=0;
+			cp[24]<=0;
+		end
+	else begin
+			if(cnt24<(CLK_IN/2*25))
+			cnt24<=cnt24+1;
+			else 
+			begin
+				cp[24]<=~cp[24];
+				cnt24<=0;
+			end
+end
+end
+end
+
+
+
+endmodule
